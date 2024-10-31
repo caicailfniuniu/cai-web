@@ -1,0 +1,20 @@
+{
+  "name": "re-widgets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pnpm -C play dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@re/components": "workspace:^",
+    "@re/theme": "workspace:^",
+    "@re/utils": "workspace:^",
+    "typescript": "^5.6.3",
+    "vue": "^3.5.12"
+  }
+}
