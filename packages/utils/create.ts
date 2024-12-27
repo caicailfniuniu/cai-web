@@ -23,7 +23,7 @@ function createBem(prefixName: string) {
     const em = (element:string = '', modifier:string = '') => element && modifier ? _bem(prefixName,'',element,modifier) : ''
     const bem = (blockSuffix:string = '',element:string = '', modifier:string = '') => blockSuffix && element && modifier ? _bem(prefixName,blockSuffix,element,modifier) : ''
     
-    const is = (name:string, state) => (state ? `is-${name}` : '')
+    const is = (name:string, state:string|boolean) => (state ? `is-${name}` : '')
     return {
         b,
         e,
@@ -36,10 +36,7 @@ function createBem(prefixName: string) {
     }
 }
 
-function createNamespace (name: string) {
+export function createNamespace (name: string) {
     const prefixName = `re-${name}`
     return createBem(prefixName)
 }
-const bem = createNamespace('button')
-
-console.log(bem.b('button'));

@@ -2,7 +2,9 @@
 </script>
 
 <template>
-  测试
+  <re-icon :color="'red'" :size="20">
+    hello   
+  </re-icon>
 </template>
 
 <style scoped>

@@ -1,0 +1,5 @@
+@use 'minxins/minxins.scss' as *;
+
+@include b(icon) {
+    background: red;
+}

@@ -16,5 +16,9 @@
     "@re/utils": "workspace:^",
     "typescript": "^5.6.3",
     "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "sass": "^1.80.5",
+    "unplugin-vue-define-options": "^1.5.2"
   }
 }
